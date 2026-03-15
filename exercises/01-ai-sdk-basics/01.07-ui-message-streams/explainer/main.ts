@@ -11,3 +11,4 @@ const stream = streamText({
 for await (const chunk of stream.toUIMessageStream()) {
   console.log(chunk);
 }
+
