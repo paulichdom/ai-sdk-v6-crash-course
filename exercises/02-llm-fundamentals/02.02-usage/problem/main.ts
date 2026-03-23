@@ -10,7 +10,6 @@ for await (const chunk of output.textStream) {
   process.stdout.write(chunk);
 }
 
-console.log(); // Empty log to separate the output from the usage
+console.log();
 
-// TODO: Print the usage to the console
-TODO;
+console.log('Token usage: ', await output.usage);
